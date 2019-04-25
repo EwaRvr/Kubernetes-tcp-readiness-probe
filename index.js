@@ -22,5 +22,6 @@ function startTcpListener(port, server, name, logger = console) {
 
 module.exports = {
     start: (port, logger) => startTcpListener(port || livenessPort, livenessServer, 'Liveness', logger),
-    ready: (port, logger) => startTcpListener(port || readinessPort, readinessServer, 'Readiness', logger)
+    ready: (port, logger) => startTcpListener(port || readinessPort, readinessServer, 'Readiness', logger),
+    notReady: () => Promise.resolve(readinessServer.close())
 };
