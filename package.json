@@ -1,0 +1,8 @@
+{
+  "name": "Kubernetes-tcp-readiness-probe",
+  "version": "1.0.0",
+  "description": "Promisified TCP-socket based Readiness and Liveness probe endpoints for Kubernettes appso",
+  "main": "./index.js",
+  "author": "Ewald Ramp",
+  "license": "MIT
+}
